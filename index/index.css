@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7EADA;
+    font-family: Arial, sans-serif;
+}
+
+#Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    background-color: #7D3535;
+    padding: 20px 30px;
+}
+/*TOP MENU*/
+#Menu .menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    margin: 2px;
+    font-size: 20px;
+}
+/*menu para menu desplazable*/
+#Menu .menu .out-menu-menu{
+    margin: 0 60% 0 0;
+}
+
+.menu-desplazable{
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.out-menu-menu:hover .menu-desplazable{
+    visibility: visible;
+}
+
+/*Buscador*/
+#Menu .menu .out-menu-search{
+    display: flex;
+    align-items: center;
+    margin: 0 60% 0 70%;
+}
+
+#Menu .menu .out-menu-search input{
+    font-size: 20px;
+    border-radius: 50px;
+    padding-left: 10px;
+    background-color: #F7EADA;
+}
+/*Boton de registro*/
+
+#Menu .menu .out-menu-registro{
+    margin: 0 0 0 70%;
+}
+
+/*menu desplzable*/
+.menu-desplazable{
+    position: fixed;
+    margin-top: 20px;
+    list-style: none;
+    background-color: #7d3535cb;
+    margin-left: -2.5%;
+    height: 100%;
+    width: 20%;
+}
+
+.menu-desplazable .in-menu{
+    display: flex;
+    background-color: #7d35350e;
+    border-radius: 3%;
+    font-size: 18px;
+    padding: 10% 0 10% 20%;
+    margin: 4% 0 2% 0;
+}
+
+.in-menu:hover{
+    color: #F7EADA;
+    display: flex;  
+    border-radius: 3%;
+    font-size: 20px;
+    padding: 10% 0 10% 25%;
+    margin: 4% -6% 3% 0;
+    background-color: #7d3535ec;
+}
