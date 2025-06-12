@@ -1,0 +1,158 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: whitesmoke;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /*Menu Horizontal*/
+    #navegador {
+      padding: 10px;
+      display: flex;
+      position: fixed;
+      z-index: 2;
+    }
+
+    #navegador  {
+      display: flex;
+      top: 0;
+      height: 40px;
+      width: 100%;
+      margin-right: 0;
+    }
+    
+    /*left*/
+    .m-left{
+      float: left;
+      margin-left: -5%;
+    }
+
+    .m-left img{
+      height: 40px;
+      width: 100%;
+      border-radius: 5%;
+    }
+
+    #list{
+      font-size: 25px;
+    }
+
+    .m-right{
+      float: right;
+      margin-right: 0;
+    }
+
+    .m-center{
+      justify-content: center;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+    }
+
+    .menu a {
+      color: #5f2525;
+      background-color: #ffffff49;
+      border-radius: 20%;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 8px 10px;
+      transition: 0.3s ease;
+    }
+
+    .menu a:hover {
+      background-color: #982c2c;
+      color: antiquewhite;
+      border-radius: 5px;
+    }
+    /*Imagenes al principio*/
+    #carouselExampleIndicators{
+        display: flex;
+        height: 90dvh;
+        width: 100%;
+        top: 0;
+    }
+
+
+    /*Contenido*/
+    main {
+      padding: 40px 20px;
+    }
+
+    .seccion{
+      margin-bottom: 60px;
+      margin: 0 10px;
+      width: 100%;
+      border: 2px solid #622323;;
+    }
+
+    .titulo-seccion {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #5f2525;
+    }
+
+    .contenedor-productos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .producto {
+      background-color: #fff;
+      border: 1px solid #622323;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .producto p {
+      margin: 15px 0;
+      font-weight: bold;
+    }
+
+    .ver-mas {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 25px;
+      background-color: #5f2525;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .ver-mas:hover {
+      background-color: #982c2c;
+    }
+
+    footer {
+      background-color: antiquewhite;
+      color: #7a2323;
+      padding: 20px;
+      text-align: center;
+      bottom:0;
+      width: 100%;
+    }
